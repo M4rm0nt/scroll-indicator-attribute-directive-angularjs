@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body ng-controller="MainController">
-<div class="content" live-action-button>
-    <h1>Scroll Check and Go to Bottom</h1>
-    <p ng-repeat="n in [].constructor(50) track by $index">This is sample content to test scrolling.</p>
+<div class="content" live-action-button min-scroll-difference="50">
+    <h1>Test scroll indicator live button</h1>
+    <p ng-repeat="text in sampleText track by $index">{{ text }}</p>
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
 <script src="app.js"></script>
